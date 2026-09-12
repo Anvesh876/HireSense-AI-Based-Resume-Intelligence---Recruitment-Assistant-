@@ -17,7 +17,7 @@ def generate_resume_pdf(
     filename,
     resume_text,
     score,
-    output_folder="generated_resumes"
+    output_folder= os.path.join("/tmp", "generated_resumes")
 ):
 
     # PDF should only be generated if score is 85 or above
