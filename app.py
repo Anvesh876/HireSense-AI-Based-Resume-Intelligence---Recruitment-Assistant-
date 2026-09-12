@@ -18,8 +18,8 @@ app = Flask(__name__)
 # FOLDERS
 # =========================================================
 
-UPLOAD_FOLDER = "uploads"
-GENERATED_FOLDER = "generated_resumes"
+UPLOAD_FOLDER = os.path.join("/tmp", "uploads")
+GENERATED_FOLDER = os.path.join("/tmp", "generated_resumes")
 
 ALLOWED_EXTENSIONS = {"pdf", "docx"}
 
